@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelector</title>
+</head>
+<h1>
+    QuerySelector in JavaScript DOM
+</h1>
+<style>
+    h1{
+        color: crimson;
+        background-color: rgb(236, 193, 100);
+    }
+    body{
+        background-color: aqua;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="QS">
+        <p>
+            QuerySelector() in JavaScript is used to give styles to tags
+        </p>
+        <p>
+            QuerySelector() is used to style a particular selected tags
+        </p>
+    </div>
+    <button onclick="fun()">Try Me</button>
+    <script>
+        function fun(){
+            var q=document.getElementById("QS");
+            q.querySelector("p").style.backgroundColor="Purple";
+            q.querySelector("p").style.color="white";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+</head>
+<body>
+    <style>
+        h1{
+            background-color: rgb(255, 228, 193);
+            color: crimson;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <h1>
+        AddEventListener in JavaScript
+    </h1>
+    <p>
+        AddEventListener in JavaScript DOM is used to proceed the program / web page According to procedure or spicific occurancy
+    </p>
+    <button id="btn">Click this</button>
+    <p id="Add"></p>
+    <script>
+        function fun1() {
+            btn.style.width = "77px";
+            btn.style.height = "75px";
+            btn.style.background = "blue";
+            btn.style.color = "red";
+        }
+        function fun2() {
+            document.getElementById("Add").innerHTML = "You successfully Entered the second segment of AddEventListener";
+        }
+        function fun3() {
+            btn.style.width = "";
+            btn.style.height = "";
+            btn.style.background = "";
+            btn.style.color = "";
+        }
+        var A=document.getElementById("btn");
+        A.addEventListener("mouseover",fun1);
+        A.addEventListener("click",fun2);
+        A.addEventListener("mouseout",fun3);
+    </script>
+</body>
+</html>

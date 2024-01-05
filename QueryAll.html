@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuertselectorAll</title>
+</head>
+<h1>
+    QuerySelectorALL in JavaScript DOM
+</h1>
+<style>
+    h1{
+        color: crimson;
+        background-color: rgb(236, 193, 100);
+    }
+    body{
+        background-color: aqua;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="QA">
+        <p>
+            querySelectorALL() is a keyword used to give style to collection of tags 
+        </p>
+        <p>
+            querySelectorALL() is given in a for loop
+        </p>
+    </div>
+    <button onclick="All()">Click Here</button>
+    <script>
+        function All(){
+            var o=document.getElementById("QA").querySelectorAll("p");
+            var i;
+            for (i=0;i<o.length;i++){
+                o[i].style.backgroundColor="purple";
+                o[i].style.color="white";
+            }
+        }
+    </script>
+</body>
+</html>
